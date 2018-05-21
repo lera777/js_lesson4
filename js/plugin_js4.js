@@ -37,7 +37,7 @@ function getCodeStringFromText(str) {
     let newStr = '';
     let i = 0;
     while(i < str.length) {
-        newStr += (i !== str.length - 1) ? str.charCodeAt(i++) + ' ' : str.charCodeAt(i++);
+        newStr += i !== str.length - 1 ? str.charCodeAt(i++) + ' ' : str.charCodeAt(i++);
     }
     return newStr;
 }
